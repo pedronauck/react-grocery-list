@@ -1,0 +1,15 @@
+{
+  "name": "grocery-list",
+  "version": "0.0.1",
+  "description": "A sample of Grocery List application to test ReactJS + Gulp + Browserify",
+  "author": "Pedro Nauck (pedronauck@gmail.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^5.9.1",
+    "gulp": "^3.8.6",
+    "gulp-webserver": "^0.4.0",
+    "react": "^0.11.1",
+    "reactify": "^0.14.0",
+    "vinyl-source-stream": "^0.1.1"
+  }
+}

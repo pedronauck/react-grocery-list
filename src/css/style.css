@@ -1,0 +1,46 @@
+body, html {
+	font-family: 'Raleway';
+	height: 100%;
+	max-height: 100%;
+}
+
+#content {
+	width: 400px;
+	padding: 50px;
+}
+
+.title {
+	margin: 0 0 30px 0;
+	font-weight: 100;
+	font-size: 48px;
+	color: #C1C1C1;
+	text-shadow: 0 1px rgba(255,255,255,0.8);
+}
+
+.grocery-list {
+	margin: 0;
+	padding: 0 0 0 30px;
+	list-style: none;
+	text-shadow: 0 1px rgba(255,255,255,0.8);
+}
+
+.grocery-list-item ~ .grocery-list-item {
+	margin-top: 8px;
+}
+
+.grocery-list-item .name {
+	margin: 0 5px;
+}
+
+.grocery-list-item .quantity {
+	color: #C1C1C1;
+}
+
+.is-buyed {
+	font-style: italic;
+}
+
+.is-buyed .name,
+.is-buyed .quantity {
+	color: #C1C1C1;
+}
