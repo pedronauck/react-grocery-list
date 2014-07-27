@@ -26,5 +26,3 @@ Its ready to use!
 $ cd /path/to/folder
 $ gulp
 ```
-
-- Finish, your environment is done to use!
