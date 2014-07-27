@@ -2,6 +2,7 @@
 'use strict';
 
 var gulp = require('gulp'),
+		gutil = require('gulp-util'),
 		browserify = require('browserify'),
 		webserver = require('gulp-webserver'),
 		reactify = require('reactify'),
@@ -17,19 +18,20 @@ gulp.task('server', function() {
 });
 
 gulp.task('scripts', function() {
-	return browserify({
+	browserify({
 		insertGlobals: true,
 		entries: ['./src/js/main.jsx'],
 		transform: ['reactify'],
 		extensions: ['.jsx']
 	})
 	.bundle()
+	.on('error', gutil.log)
 	.pipe(source('bundle.js'))
 	.pipe(gulp.dest('./src/js'));
 });
 
 gulp.task('watch', function() {
-	gulp.watch('./src/js/**/*.{jsx,js}', ['scripts']);
+	gulp.watch('./src/js/**/*.jsx', ['scripts']);
 });
 
 gulp.task('default', ['server', 'watch']);

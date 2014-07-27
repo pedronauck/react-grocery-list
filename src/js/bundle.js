@@ -4,8 +4,8 @@
 'use strict';
 
 var React = require('react');
-var GroceryList = require('./components/grocery-list.jsx');
-var items = require('./data/items.jsx');
+var GroceryList = require('./components/grocery-list');
+var items = require('./data/items');
 
 React.renderComponent(
 	GroceryList({items: items, name: "Grocery List"}),
@@ -13,7 +13,7 @@ React.renderComponent(
 );
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/src/js/main.jsx","/src/js")
-},{"./components/grocery-list.jsx":167,"./data/items.jsx":168,"_process":5,"buffer":2,"react":165}],2:[function(require,module,exports){
+},{"./components/grocery-list":167,"./data/items":168,"_process":5,"buffer":2,"react":165}],2:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -22037,7 +22037,8 @@ module.exports = require('./lib/React');
 /** @jsx React.DOM *//* jshint -W117 */
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
+var ReactAddons = require('react/addons').addons;
 
 module.exports = React.createClass({displayName: 'exports',
 	getInitialState: function() {
@@ -22048,7 +22049,7 @@ module.exports = React.createClass({displayName: 'exports',
 	},
 	render: function() {
 		var item = this.props.item;
-		var classes = React.addons.classSet({
+		var classes = ReactAddons.classSet({
 			'grocery-list-item': true,
 			'is-buyed': this.state.buyed
 		});
@@ -22066,13 +22067,13 @@ module.exports = React.createClass({displayName: 'exports',
 });
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/src/js/components/grocery-list-item.jsx","/src/js/components")
-},{"_process":5,"buffer":2,"react/addons":6}],167:[function(require,module,exports){
+},{"_process":5,"buffer":2,"react":165,"react/addons":6}],167:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /** @jsx React.DOM *//* jshint -W117 */
 'use strict';
 
 var React = require('react');
-var GroceryListItem = require('./grocery-list-item.jsx');
+var GroceryListItem = require('./grocery-list-item');
 
 module.exports = React.createClass({displayName: 'exports',
 	render: function() {
@@ -22090,7 +22091,7 @@ module.exports = React.createClass({displayName: 'exports',
 });
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/src/js/components/grocery-list.jsx","/src/js/components")
-},{"./grocery-list-item.jsx":166,"_process":5,"buffer":2,"react":165}],168:[function(require,module,exports){
+},{"./grocery-list-item":166,"_process":5,"buffer":2,"react":165}],168:[function(require,module,exports){
 (function (process,global,Buffer,__argument0,__argument1,__argument2,__argument3,__filename,__dirname){
 /** @jsx React.DOM *//* jshint -W117 */
 'use strict';
