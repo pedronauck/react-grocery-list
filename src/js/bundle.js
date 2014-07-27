@@ -5,7 +5,7 @@
 
 var React = require('react');
 var GroceryList = require('./components/grocery-list');
-var items = require('./data/items');
+var items = require('./data/groceries');
 
 React.renderComponent(
 	GroceryList({items: items, name: "Grocery List"}),
@@ -13,7 +13,7 @@ React.renderComponent(
 );
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/src/js/main.jsx","/src/js")
-},{"./components/grocery-list":167,"./data/items":168,"_process":5,"buffer":2,"react":165}],2:[function(require,module,exports){
+},{"./components/grocery-list":167,"./data/groceries":168,"_process":5,"buffer":2,"react":165}],2:[function(require,module,exports){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -22056,7 +22056,7 @@ module.exports = React.createClass({displayName: 'exports',
 
 		return (
 			React.DOM.li({className: classes}, 
-				React.DOM.input({id: 'item-' + item.id, type: "checkbox", value: item.buyed, onChange: this.onChange}), 
+				React.DOM.input({id: 'item-' + item.id, type: "checkbox", onChange: this.onChange}), 
 				React.DOM.label({htmlFor: 'item-' + item.id}, 
 					React.DOM.span({className: "name"}, item.name), 
 					React.DOM.span({className: "quantity"}, "(", item.quantity, ")")
@@ -22107,5 +22107,5 @@ module.exports = [
 	{ id: 8, name: 'Orange', quantity: '2' }
 ]
 
-}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/src/js/data/items.jsx","/src/js/data")
+}).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {},require("buffer").Buffer,arguments[3],arguments[4],arguments[5],arguments[6],"/src/js/data/groceries.jsx","/src/js/data")
 },{"_process":5,"buffer":2}]},{},[1]);
