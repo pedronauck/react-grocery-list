@@ -1,7 +1,8 @@
 /* jshint -W117 */
 'use strict';
 
-var React = require('react/addons');
+var React = require('react');
+var ReactAddons = require('react/addons').addons;
 
 module.exports = React.createClass({
 	getInitialState: function() {
@@ -12,7 +13,7 @@ module.exports = React.createClass({
 	},
 	render: function() {
 		var item = this.props.item;
-		var classes = React.addons.classSet({
+		var classes = ReactAddons.classSet({
 			'grocery-list-item': true,
 			'is-buyed': this.state.buyed
 		});

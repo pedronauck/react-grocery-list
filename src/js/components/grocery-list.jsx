@@ -2,7 +2,7 @@
 'use strict';
 
 var React = require('react');
-var GroceryListItem = require('./grocery-list-item.jsx');
+var GroceryListItem = require('./grocery-list-item');
 
 module.exports = React.createClass({
 	render: function() {

@@ -2,8 +2,8 @@
 'use strict';
 
 var React = require('react');
-var GroceryList = require('./components/grocery-list.jsx');
-var items = require('./data/items.jsx');
+var GroceryList = require('./components/grocery-list');
+var items = require('./data/items');
 
 React.renderComponent(
 	<GroceryList items={items} name='Grocery List' />,

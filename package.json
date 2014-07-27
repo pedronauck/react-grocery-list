@@ -1,5 +1,5 @@
 {
-  "name": "grocery-list",
+  "name": "react-grocery-list",
   "version": "0.0.1",
   "description": "A sample of Grocery List application to test ReactJS + Gulp + Browserify",
   "author": "Pedro Nauck (pedronauck@gmail.com)",

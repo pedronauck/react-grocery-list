@@ -2,9 +2,9 @@
 'use strict';
 
 var gulp = require('gulp'),
-		reactify = require('reactify'),
 		browserify = require('browserify'),
 		webserver = require('gulp-webserver'),
+		reactify = require('reactify'),
 		source = require('vinyl-source-stream');
 
 gulp.task('server', function() {
@@ -17,16 +17,19 @@ gulp.task('server', function() {
 });
 
 gulp.task('scripts', function() {
-	browserify({insertGlobals: true})
-		.add('./src/js/main.jsx')
-		.transform(reactify)
-		.bundle()
-		.pipe(source('bundle.js'))
-		.pipe(gulp.dest('./src/js'));
+	return browserify({
+		insertGlobals: true,
+		entries: ['./src/js/main.jsx'],
+		transform: ['reactify'],
+		extensions: ['.jsx']
+	})
+	.bundle()
+	.pipe(source('bundle.js'))
+	.pipe(gulp.dest('./src/js'));
 });
 
 gulp.task('watch', function() {
-	gulp.watch('./src/js/**/*.jsx', ['scripts']);
+	gulp.watch('./src/js/**/*.{jsx,js}', ['scripts']);
 });
 
 gulp.task('default', ['server', 'watch']);
