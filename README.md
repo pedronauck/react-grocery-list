@@ -9,7 +9,7 @@ To use this project is necessary install few dependencies
 - First install [NodeJS](http://www.nodejs.org) in your system
 - Then, in your terminal clone this project
 ```bash
-$ git clone
+$ git clone git@github.com:pedronauck/react-grocery-list.git
 ```
 - Inside the project folder, install NodeJS dependencies using NPM
 ```bash
