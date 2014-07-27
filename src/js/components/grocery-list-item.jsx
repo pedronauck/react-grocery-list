@@ -20,7 +20,7 @@ module.exports = React.createClass({
 
 		return (
 			<li className={classes}>
-				<input id={'item-' + item.id} type='checkbox' value={item.buyed} onChange={this.onChange} />
+				<input id={'item-' + item.id} type='checkbox' value={this.state.buyed} onChange={this.onChange} />
 				<label htmlFor={'item-' + item.id}>
 					<span className='name'>{item.name}</span>
 					<span className='quantity'>({item.quantity})</span>

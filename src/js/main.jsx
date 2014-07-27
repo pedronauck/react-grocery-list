@@ -3,7 +3,7 @@
 
 var React = require('react');
 var GroceryList = require('./components/grocery-list');
-var items = require('./data/items');
+var items = require('./data/groceries');
 
 React.renderComponent(
 	<GroceryList items={items} name='Grocery List' />,
