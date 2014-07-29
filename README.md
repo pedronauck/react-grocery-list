@@ -1,7 +1,9 @@
-Grocery List App
+React Grocery List
 ----
 
-This is a sample Grocery List application to test ReactJS + Gulp + Browserify.
+![](http://cl.ly/image/10291K1S3z2g/Screen%20Shot%202014-07-29%20at%2007.03.34.png)
+
+This is a sample Grocery List application to test ReactJS + Gulp + Browserify. To see in action [click here](http://embed.plnkr.co/hEKPhf/preview)
 
 ## Installation
 
